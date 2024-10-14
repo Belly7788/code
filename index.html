@@ -240,7 +240,7 @@
             document.getElementById('productNameDisplay').innerText = productName;
         
             // Use a barcode generation API
-            var barcodeUrl = 'https://barcode.tec-it.com/barcode.ashx?data=' + encodeURIComponent(productCode) + '&code=Code128&translate-esc=off&width=400&height=150&dpi=600';
+            var barcodeUrl = 'https://barcode.tec-it.com/barcode.ashx?data=' + encodeURIComponent(productCode) + '&code=Code128&dpi=300';
 
             document.getElementById('qrCode').src = barcodeUrl;
         
